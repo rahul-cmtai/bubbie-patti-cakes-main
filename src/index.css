@@ -1,0 +1,296 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Bubbie Cakery Design System - Premium Bakery Theme
+All colors MUST be HSL. Luxury minimal with golden accents.
+*/
+
+@layer base {
+  :root {
+    /* Base Colors - Pure White & Deep Black */
+    --background: 0 0% 100%; /* Pure white like logo background */
+    --foreground: 0 0% 0%; /* Deep black like logo text */
+
+    /* Card System */
+    --card: 0 0% 100%; /* Pure white cards */
+    --card-foreground: 0 0% 0%;
+
+    /* Popover System */
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+
+    /* Primary - Bronze Gold (matching logo border) */
+    --primary: 30 65% 45%; /* Rich bronze gold */
+    --primary-foreground: 0 0% 100%;
+    --primary-glow: 35 75% 55%; /* Brighter bronze for effects */
+
+    /* Secondary - Soft Cream */
+    --secondary: 45 20% 96%; /* Very light cream */
+    --secondary-foreground: 0 0% 0%;
+
+    /* Muted Tones */
+    --muted: 30 10% 95%;
+    --muted-foreground: 0 0% 40%;
+
+    /* Accent - Bronze Dark */
+    --accent: 25 45% 35%; /* Darker bronze accent */
+    --accent-foreground: 0 0% 100%;
+
+    /* System Colors */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 45 15% 88%;
+    --input: 45 15% 90%;
+    --ring: 42 78% 60%;
+
+    /* Border Radius for Premium Feel */
+    --radius: 0.75rem;
+
+    /* Custom Brand Colors - Matching Official Logo */
+    --golden: 30 65% 45%; /* Bronze gold matching logo border */
+    --golden-light: 35 45% 70%; /* Light bronze for backgrounds */
+    --golden-dark: 28 75% 35%; /* Darker bronze for emphasis */
+    --chocolate: 0 0% 0%; /* Pure black like logo text */
+    --chocolate-light: 0 0% 20%; /* Lighter black/dark gray */
+    --cream: 0 0% 100%; /* Pure white like logo background */
+    --cream-dark: 45 20% 96%; /* Very light cream */
+
+    /* Gradients - Matching Logo Style */
+    --gradient-golden: linear-gradient(135deg, hsl(var(--golden-light)) 0%, hsl(var(--golden)) 50%, hsl(var(--golden-dark)) 100%);
+    --gradient-cream: linear-gradient(180deg, hsl(var(--cream)) 0%, hsl(var(--cream-dark)) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(var(--cream)) 0%, hsl(var(--golden-light)) 100%);
+
+    /* Shadows for Premium Feel */
+    --shadow-soft: 0 4px 20px hsl(var(--golden) / 0.1);
+    --shadow-golden: 0 8px 32px hsl(var(--golden) / 0.2);
+    --shadow-hover: 0 12px 40px hsl(var(--golden) / 0.25);
+
+    /* Animations */
+    --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  /* Dark mode with bronze luxury tones */
+  .dark {
+    --background: 0 0% 8%; /* Deep black background */
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 30 65% 55%; /* Brighter bronze for dark mode */
+    --primary-foreground: 0 0% 8%;
+
+    --secondary: 30 15% 15%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 0% 18%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 30 60% 50%;
+    --accent-foreground: 0 0% 8%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 95%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 30 65% 55%;
+
+    /* Updated custom colors for dark mode */
+    --golden: 30 65% 55%;
+    --golden-light: 35 55% 70%;
+    --golden-dark: 28 75% 40%;
+    --chocolate: 0 0% 8%;
+    --chocolate-light: 0 0% 25%;
+    --cream: 0 0% 12%;
+    --cream-dark: 30 10% 15%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter antialiased;
+  }
+
+  /* Single floral pattern background for each section */
+  section, .container, main > div {
+    background-image: url('/src/assets/floral-pattern.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: local;
+    opacity: 1;
+  }
+
+  /* Ensure content is above the background */
+  section > *, .container > *, main > div > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Premium Typography */
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-inter {
+    font-family: 'Inter', sans-serif;
+  }
+
+  /* Patti Border Design */
+  .patti-border {
+    position: relative;
+  }
+
+  .patti-border::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    background: var(--gradient-golden);
+    border-radius: inherit;
+    padding: 2px;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask-composite: xor;
+    -webkit-mask-composite: xor;
+  }
+
+  /* Golden glow effects */
+  .golden-glow {
+    box-shadow: 0 0 20px hsl(var(--golden) / 0.3);
+    transition: var(--transition-smooth);
+  }
+
+  .golden-glow:hover {
+    box-shadow: 0 0 30px hsl(var(--golden) / 0.5);
+    transform: translateY(-2px);
+  }
+
+  /* Smooth animations */
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+  }
+
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-out forwards;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 0.8s ease-out forwards;
+  }
+
+  .animate-slide-in-right {
+    animation: slideInRight 0.8s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scaleIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+  }
+
+  /* Parallax scrolling */
+  .parallax {
+    transform: translateZ(0);
+    will-change: transform;
+  }
+}
+
+@layer components {
+  /* Premium card component */
+  .premium-card {
+    @apply bg-card border border-border rounded-xl p-6 shadow-soft backdrop-blur-sm transition-all duration-300;
+  }
+
+  .premium-card:hover {
+    @apply shadow-hover -translate-y-1;
+  }
+
+  /* Hero button styles */
+  .btn-hero {
+    @apply bg-primary text-primary-foreground px-8 py-4 rounded-xl font-semibold shadow-golden hover:shadow-hover transition-all duration-300 hover:-translate-y-1;
+  }
+
+  .btn-outline-hero {
+    @apply border-2 border-primary text-primary bg-transparent px-8 py-4 rounded-xl font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300 hover:-translate-y-1;
+  }
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
