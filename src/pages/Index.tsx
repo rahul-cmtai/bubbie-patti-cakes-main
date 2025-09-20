@@ -50,7 +50,7 @@ const Index = () => {
             className="w-full h-full object-cover"
           >
             {/* Direct video link as background */}
-            <source src="https://videocdn.cdnpk.net/videos/90f7589c-8ef8-522f-9920-451236e021ad/horizontal/previews/clear/large.mp4?token=exp=1758289412~hmac=32376d0560dc998cc619a2c6311dbd02173d8abaacf2813b0fc11f5aedf88590" type="video/mp4" />
+            <source src="https://videocdn.cdnpk.net/videos/90f7589c-8ef8-522f-9920-451236e021ad/horizontal/previews/clear/large.mp4?token=exp=1758367912~hmac=f86ed1ae423aba2c961a99864144c4dc544e5f09952605eb2333d4fc6fab6e20" type="video/mp4" />
             {/* You can add more <source> tags for other formats if needed */}
           </video>
           
