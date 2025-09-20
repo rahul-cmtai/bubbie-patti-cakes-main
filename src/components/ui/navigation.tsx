@@ -2,7 +2,6 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import logo from "@/assets/bubbie-logo.png";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -29,7 +28,7 @@ const Navigation = () => {
   <div className="flex justify-between items-center h-28">
     {/* Logo */}
     <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-      <img src={logo} alt="Bubbie Cakery" className="h-24 w-auto" />
+      <img src="/logo.jpeg" alt="Bubble Cakery" className="h-24 w-auto" />
     </Link>
 
     {/* Desktop Navigation */}
