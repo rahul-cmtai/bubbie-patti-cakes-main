@@ -6,7 +6,7 @@ const Testimonial = () => {
   const testimonials = [
     {
       name: "Sarah Johnson",
-      text: "The most divine chocolate cake I've ever tasted! Bubbie Cakery truly creates magic with every bite.",
+      text: "The most divine chocolate cake I've ever tasted! Bubble Cakery truly creates magic with every bite.",
       rating: 5,
     },
     {
@@ -26,7 +26,7 @@ const Testimonial = () => {
     },
     {
       name: "Lisa Parker",
-      text: "Fresh ingredients and creative designs make Bubbie Cakery the best bakery in town!",
+      text: "Fresh ingredients and creative designs make Bubble Cakery the best bakery in town!",
       rating: 5,
     },
     {
@@ -80,7 +80,7 @@ const Testimonial = () => {
             What Our Customers Say
           </h2>
           <p className="font-inter text-lg text-muted-foreground">
-            Discover why thousands of customers choose Bubbie Cakery for their special moments
+            Discover why thousands of customers choose Bubble Cakery for their special moments
           </p>
         </motion.div>
 

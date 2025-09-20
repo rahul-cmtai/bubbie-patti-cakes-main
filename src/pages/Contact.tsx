@@ -64,7 +64,7 @@ const Contact = () => {
   };
 
   const handleWhatsAppContact = () => {
-    const message = encodeURIComponent("Hi! I have a question about Bubbie Cakery. Can you help me?");
+    const message = encodeURIComponent("Hi! I have a question about Bubble Cakery. Can you help me?");
     window.open(`https://wa.me/+1234567890?text=${message}`, "_blank");
   };
 

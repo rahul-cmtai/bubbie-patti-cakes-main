@@ -62,7 +62,7 @@ const Franchise = () => {
     {
       step: "4",
       title: "Grand Opening",
-      description: "Launch your Bubbie Cakery location with full support from our team.",
+      description: "Launch your Bubble Cakery location with full support from our team.",
     },
   ];
 
@@ -70,7 +70,7 @@ const Franchise = () => {
     e.preventDefault();
     toast({
       title: "Application Submitted!",
-      description: "Thank you for your interest in Bubbie Cakery franchise. We'll contact you within 24 hours.",
+      description: "Thank you for your interest in Bubble Cakery franchise. We'll contact you within 24 hours.",
     });
     setFormData({ name: "", email: "", phone: "", location: "", message: "" });
   };
@@ -83,7 +83,7 @@ const Franchise = () => {
   };
 
   const handleWhatsAppInquiry = () => {
-    const message = encodeURIComponent("Hi! I'm interested in the Bubbie Cakery franchise opportunity. Can you provide me with more information?");
+    const message = encodeURIComponent("Hi! I'm interested in the Bubble Cakery franchise opportunity. Can you provide me with more information?");
     window.open(`https://wa.me/+1234567890?text=${message}`, "_blank");
   };
 
@@ -99,7 +99,7 @@ const Franchise = () => {
             transition={{ duration: 0.8 }}
           >
             <h1 className="font-playfair text-5xl md:text-6xl font-bold text-foreground mb-6">
-              Join the Bubbie Family
+              Join the Bubble Family
             </h1>
             <p className="font-inter text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
               Partner with us to bring the taste that thrills to your community. 
@@ -175,7 +175,7 @@ const Franchise = () => {
         Franchise Process
       </h2>
       <p className="font-inter text-lg text-muted-foreground max-w-2xl mx-auto">
-        Follow our simple four-step process to become a Bubbie Cakery franchise owner.
+        Follow our simple four-step process to become a Bubble Cakery franchise owner.
       </p>
     </motion.div>
 

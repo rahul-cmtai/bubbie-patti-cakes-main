@@ -1,6 +1,5 @@
 import { Facebook, Instagram, Twitter, MapPin, Phone, Mail } from "lucide-react";
 import { Link } from "react-router-dom";
-import logo from "@/assets/bubbie-logo.png";
 
 const Footer = () => {
   const socialLinks = [
@@ -23,7 +22,7 @@ const Footer = () => {
           {/* Logo and Description */}
           <div className="md:col-span-2">
             <Link to="/" className="inline-block mb-4">
-              <img src={logo} alt="Bubbie Cakery" className="h-16 w-auto" />
+              <img src="/logo.jpeg" alt="Bubble Cakery" className="h-16 w-auto" />
             </Link>
             <p className="text-muted-foreground mb-4 max-w-md font-inter">
               Premium handcrafted cakes, pastries, and gourmet treats. Experience luxury baking 
@@ -96,7 +95,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="text-muted-foreground font-inter text-sm">
-            © 2024 Bubbie Cakery. All rights reserved. | Made with ❤️ for sweet moments.
+            © 2025 Bubble Cakery. All rights reserved. | Created by CMT AI
           </p>
         </div>
       </div>

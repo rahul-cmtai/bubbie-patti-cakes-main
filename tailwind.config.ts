@@ -48,7 +48,7 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        // Bubbie Cakery Brand Colors
+        // Bubble Cakery Brand Colors
         golden: {
           DEFAULT: "hsl(var(--golden))",
           light: "hsl(var(--golden-light))",

@@ -69,7 +69,7 @@ const About = () => {
                 into a premium destination for luxury cakes, artisanal pastries, and gourmet treats.
               </p>
               <p className="font-inter text-lg text-muted-foreground leading-relaxed">
-                At Bubbie Cakery, we believe every celebration deserves something special. 
+                At Bubble Cakery, we believe every celebration deserves something special. 
                 That's why we pour our hearts into every creation, using traditional techniques 
                 combined with innovative flavors to deliver a taste that truly thrills.
               </p>
@@ -168,7 +168,7 @@ const About = () => {
             className="text-center mb-16"
           >
             <h2 className="font-playfair text-4xl md:text-5xl font-bold text-foreground mb-4">
-              Why Choose Bubbie Cakery?
+              Why Choose Bubble Cakery?
             </h2>
             <p className="font-inter text-lg text-muted-foreground max-w-2xl mx-auto">
               Discover what makes us the preferred choice for premium baking experiences.

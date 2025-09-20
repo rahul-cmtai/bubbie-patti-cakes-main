@@ -6,7 +6,7 @@ const FloatingButtons = () => {
   const phoneNumber = "+1234567890"; // Replace with actual phone number
 
   const handleWhatsAppClick = () => {
-    const message = encodeURIComponent("Hi! I'm interested in Bubbie Cakery products. Can you help me?");
+    const message = encodeURIComponent("Hi! I'm interested in Bubble Cakery products. Can you help me?");
     window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank");
   };
 
