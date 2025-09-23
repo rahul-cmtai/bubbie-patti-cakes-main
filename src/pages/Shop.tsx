@@ -719,11 +719,11 @@ const Shop = () => {
 
   const handleWhatsAppOrder = (productName: string, price: string) => {
     const message = encodeURIComponent(`Hi! I'd like to order the ${productName} (${price}). Can you help me with the details?`);
-    window.open(`https://wa.me/+1234567890?text=${message}`, "_blank");
+    window.open(`https://wa.me/919138724870?text=${message}`, "_blank");
   };
 
   const handleCallOrder = () => {
-    const phoneNumber = "+1234567890";
+    const phoneNumber = "+919138724870";
     window.location.href = `tel:${phoneNumber}`;
   };
 
@@ -1104,20 +1104,34 @@ const Shop = () => {
             </p>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="premium-card text-center">
-                <MessageCircle className="h-12 w-12 text-green-500 mx-auto mb-4" />
+                <a
+                  href="https://wa.me/919138724870"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center w-16 h-16 bg-green-500 rounded-full shadow hover:bg-green-600 transition mb-4"
+                  aria-label="WhatsApp"
+                >
+                  <MessageCircle className="h-8 w-8 text-white" />
+                </a>
                 <h3 className="font-playfair text-xl font-bold text-foreground mb-2">
                   WhatsApp Orders
                 </h3>
-                <p className="font-inter text-muted-foreground text-sm">
+                <p className="font-inter text-muted-foreground text-sm mb-4">
                   Quick and convenient ordering with instant confirmation
                 </p>
               </div>
               <div className="premium-card text-center">
-                <Phone className="h-12 w-12 text-primary mx-auto mb-4" />
+                <a
+                  href="tel:+919138724870"
+                  className="inline-flex items-center justify-center w-16 h-16 bg-primary rounded-full shadow hover:bg-primary/90 transition mb-4"
+                  aria-label="Call"
+                >
+                  <Phone className="h-8 w-8 text-white" />
+                </a>
                 <h3 className="font-playfair text-xl font-bold text-foreground mb-2">
                   Phone Orders
                 </h3>
-                <p className="font-inter text-muted-foreground text-sm">
+                <p className="font-inter text-muted-foreground text-sm mb-4">
                   Speak directly with our team for personalized service
                 </p>
               </div>

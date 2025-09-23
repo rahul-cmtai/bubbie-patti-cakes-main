@@ -27,16 +27,16 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Call Us",
-      details: ["+1 (234) 567-890", "Mon-Sat: 7AM - 8PM"],
+      details: ["+91 91387 24870", "Mon-Sat: 7AM - 8PM"], // updated number
       action: "Call Now",
-      href: "tel:+1234567890",
+      href: "tel:+919138724870", // updated tel link
     },
     {
       icon: Mail,
       title: "Email Us",
-      details: ["hello@bubbiecakery.com", "We respond within 24 hours"],
+      details: ["franchise@bubbiecakery.com", "We respond within 24 hours"], // updated email
       action: "Send Email",
-      href: "mailto:hello@bubbiecakery.com",
+      href: "mailto:franchise@bubbiecakery.com", // updated mailto link
     },
     {
       icon: Clock,
@@ -65,7 +65,7 @@ const Contact = () => {
 
   const handleWhatsAppContact = () => {
     const message = encodeURIComponent("Hi! I have a question about Bubble Cakery. Can you help me?");
-    window.open(`https://wa.me/+1234567890?text=${message}`, "_blank");
+    window.open(`https://wa.me/919138724870?text=${message}`, "_blank"); // updated WhatsApp number
   };
 
   return (
