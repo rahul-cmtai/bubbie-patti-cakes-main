@@ -20,9 +20,9 @@ const Contact = () => {
     {
       icon: MapPin,
       title: "Visit Our Bakery",
-      details: ["123 Baker Street, Pastry Lane", "Sweet City, SC 12345"],
+      details: ["KC road Barnala, Barnala , Punjab, 148101"],
       action: "Get Directions",
-      href: "https://maps.google.com",
+      href: "https://www.google.com/maps/search/?api=1&query=KC%20road%20Barnala%2C%20Barnala%20%2C%20Punjab%2C%20148101",
     },
     {
       icon: Phone,

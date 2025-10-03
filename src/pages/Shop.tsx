@@ -2,7 +2,6 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { MessageCircle, Phone, ShoppingBag, ChevronLeft, Star, Heart, Eye, Plus, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import productShowcase from "@/assets/product-showcase.jpg";
 
 const Shop = () => {
   const [activeCategory, setActiveCategory] = useState("all");
@@ -22,7 +21,6 @@ const Shop = () => {
     { id: "flowers", name: "🌸 Flowers", icon: "🌸" },
   ];
 
-  // Real bakery subcategories based on authentic bakery classifications
   const subcategories = {
     cakes: [
       "Birthday Cakes", "Wedding Cakes", "Anniversary Cakes", "Custom Cakes", 
@@ -75,9 +73,8 @@ const Shop = () => {
     ]
   };
 
-  // Comprehensive products for ALL categories
   const products = [
-    // CAKES (Multiple varieties)
+    // CAKES
     {
       id: 1,
       name: "Signature Black Forest Cake",
@@ -85,7 +82,7 @@ const Shop = () => {
       originalPrice: "$60",
       category: "cakes",
       subcategory: "Black Forest Cakes",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=400&fit=crop",
       description: "Classic German black forest cake with layers of chocolate sponge, cherries and whipped cream",
       rating: 4.8,
       reviews: 127,
@@ -100,7 +97,7 @@ const Shop = () => {
       originalPrice: "$32",
       category: "cakes",
       subcategory: "Cupcakes",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1587668178277-295251f900ce?w=400&h=400&fit=crop",
       description: "Classic red velvet cupcakes topped with signature cream cheese frosting and sprinkles",
       rating: 4.8,
       reviews: 94,
@@ -110,27 +107,12 @@ const Shop = () => {
     },
     {
       id: 3,
-      name: "Tiramisu Slice",
-      price: "$12",
-      originalPrice: "$16",
-      category: "cakes",
-      subcategory: "Tiramisu Cakes",
-      image: productShowcase,
-      description: "Authentic Italian tiramisu with ladyfingers soaked in espresso and mascarpone cream",
-      rating: 4.8,
-      reviews: 99,
-      badge: "Authentic",
-      isNew: true,
-      discount: 25,
-    },
-    {
-      id: 4,
       name: "Chocolate Birthday Cake",
       price: "$38",
       originalPrice: "$50",
       category: "cakes",
       subcategory: "Birthday Cakes",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?w=400&h=400&fit=crop",
       description: "Rich chocolate birthday cake with vanilla buttercream and colorful decorations",
       rating: 4.9,
       reviews: 156,
@@ -139,13 +121,13 @@ const Shop = () => {
       discount: 24,
     },
     {
-      id: 5,
+      id: 4,
       name: "Vanilla Wedding Cake (3-Tier)",
       price: "$125",
       originalPrice: "$165",
       category: "cakes",
       subcategory: "Wedding Cakes",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1535141192574-5d4897c12636?w=400&h=400&fit=crop",
       description: "Elegant 3-tier vanilla wedding cake with white fondant and floral decorations",
       rating: 4.9,
       reviews: 78,
@@ -153,8 +135,22 @@ const Shop = () => {
       isNew: false,
       discount: 24,
     },
-
-    // PASTRIES (Multiple varieties)
+    {
+      id: 5,
+      name: "Tiramisu Slice",
+      price: "$12",
+      originalPrice: "$16",
+      category: "cakes",
+      subcategory: "Tiramisu Cakes",
+      image: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&h=400&fit=crop",
+      description: "Authentic Italian tiramisu with ladyfingers soaked in espresso and mascarpone cream",
+      rating: 4.8,
+      reviews: 99,
+      badge: "Authentic",
+      isNew: true,
+      discount: 25,
+    },
+    // PASTRIES
     {
       id: 6,
       name: "Butter Croissants (6 Pack)",
@@ -162,7 +158,7 @@ const Shop = () => {
       originalPrice: "$18",
       category: "pastries",
       subcategory: "Croissants",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1549903072-7e6e0bedb7fb?w=400&h=400&fit=crop",
       description: "Authentic French butter croissants with 64 layers of flaky pastry, baked fresh daily",
       rating: 4.9,
       reviews: 89,
@@ -177,7 +173,7 @@ const Shop = () => {
       originalPrice: "$22",
       category: "pastries",
       subcategory: "Pain au Chocolat",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=400&fit=crop",
       description: "Traditional French pastries filled with premium Belgian dark chocolate batons",
       rating: 4.5,
       reviews: 73,
@@ -192,7 +188,7 @@ const Shop = () => {
       originalPrice: "$12",
       category: "pastries",
       subcategory: "Eclairs",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1486427944299-d1955d23e34d?w=400&h=400&fit=crop",
       description: "Classic French éclair filled with vanilla pastry cream and topped with chocolate glaze",
       rating: 4.6,
       reviews: 78,
@@ -207,7 +203,7 @@ const Shop = () => {
       originalPrice: "$14",
       category: "pastries",
       subcategory: "Tarts",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&h=400&fit=crop",
       description: "Fresh seasonal fruits on vanilla pastry cream in a crispy tart shell",
       rating: 4.4,
       reviews: 67,
@@ -222,7 +218,7 @@ const Shop = () => {
       originalPrice: "$20",
       category: "pastries",
       subcategory: "Danish Pastries",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=400&h=400&fit=crop",
       description: "Traditional Danish pastries with apple, cherry, and cheese fillings",
       rating: 4.7,
       reviews: 85,
@@ -230,8 +226,7 @@ const Shop = () => {
       isNew: false,
       discount: 30,
     },
-
-    // SNACKS (Multiple varieties)
+    // SNACKS
     {
       id: 11,
       name: "Gourmet Club Sandwich",
@@ -239,7 +234,7 @@ const Shop = () => {
       originalPrice: "$18",
       category: "snacks",
       subcategory: "Club Sandwiches",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1553909489-cd47e0ef937f?w=400&h=400&fit=crop",
       description: "Triple-layered club sandwich with roasted turkey, bacon, lettuce, tomato on toasted bread",
       rating: 4.4,
       reviews: 91,
@@ -254,7 +249,7 @@ const Shop = () => {
       originalPrice: "$12",
       category: "snacks",
       subcategory: "Chicken Puffs",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1601314002957-655dee5a7be9?w=400&h=400&fit=crop",
       description: "Flaky puff pastry filled with spiced chicken and vegetables, baked golden brown",
       rating: 4.6,
       reviews: 103,
@@ -269,7 +264,7 @@ const Shop = () => {
       originalPrice: "$15",
       category: "snacks",
       subcategory: "Samosas",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1601050690597-df0568f70950?w=400&h=400&fit=crop",
       description: "Crispy triangular pastries filled with spiced potatoes, peas, and aromatic herbs",
       rating: 4.5,
       reviews: 124,
@@ -284,7 +279,7 @@ const Shop = () => {
       originalPrice: "$22",
       category: "snacks",
       subcategory: "Quiches",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=400&fit=crop",
       description: "Rich quiche with spinach, feta cheese, and herbs in a buttery pastry crust",
       rating: 4.7,
       reviews: 76,
@@ -299,7 +294,7 @@ const Shop = () => {
       originalPrice: "$16",
       category: "snacks",
       subcategory: "Paninis",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1509722747041-616f39b57569?w=400&h=400&fit=crop",
       description: "Grilled panini with mozzarella, tomatoes, basil, and balsamic glaze on ciabatta",
       rating: 4.5,
       reviews: 89,
@@ -307,8 +302,7 @@ const Shop = () => {
       isNew: false,
       discount: 25,
     },
-
-    // BEVERAGES (Multiple varieties)
+    // BEVERAGES
     {
       id: 16,
       name: "Artisan Coffee Blend 250g",
@@ -316,7 +310,7 @@ const Shop = () => {
       originalPrice: "$25",
       category: "beverages",
       subcategory: "Black Coffee",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=400&h=400&fit=crop",
       description: "Specially roasted premium coffee beans from Colombian highlands, perfect with pastries",
       rating: 4.6,
       reviews: 156,
@@ -331,7 +325,7 @@ const Shop = () => {
       originalPrice: "$8",
       category: "beverages",
       subcategory: "Cappuccino",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&h=400&fit=crop",
       description: "Perfect cappuccino made with espresso, steamed milk and rich foam, served hot",
       rating: 4.5,
       reviews: 134,
@@ -346,7 +340,7 @@ const Shop = () => {
       originalPrice: "$10",
       category: "beverages",
       subcategory: "Latte",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=400&fit=crop",
       description: "Smooth espresso with steamed milk, caramel syrup, and whipped cream over ice",
       rating: 4.7,
       reviews: 98,
@@ -361,7 +355,7 @@ const Shop = () => {
       originalPrice: "$12",
       category: "beverages",
       subcategory: "Smoothies",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1505252585461-04db1eb84625?w=400&h=400&fit=crop",
       description: "Refreshing smoothie made with fresh mangoes, yogurt, and a touch of honey",
       rating: 4.6,
       reviews: 87,
@@ -376,7 +370,7 @@ const Shop = () => {
       originalPrice: "$7",
       category: "beverages",
       subcategory: "Chai Latte",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?w=400&h=400&fit=crop",
       description: "Traditional Indian spiced tea with steamed milk, cardamom, cinnamon, and ginger",
       rating: 4.8,
       reviews: 145,
@@ -384,8 +378,7 @@ const Shop = () => {
       isNew: false,
       discount: 29,
     },
-
-    // COOKIES (Multiple varieties)
+    // COOKIES
     {
       id: 21,
       name: "French Macarons Assorted Box",
@@ -393,7 +386,7 @@ const Shop = () => {
       originalPrice: "$36",
       category: "cookies",
       subcategory: "Macarons",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1571506165871-dee9c884b8e4?w=400&h=400&fit=crop",
       description: "12-piece assorted French macarons in flavors: vanilla, chocolate, strawberry, pistachio",
       rating: 4.7,
       reviews: 203,
@@ -408,7 +401,7 @@ const Shop = () => {
       originalPrice: "$20",
       category: "cookies",
       subcategory: "Chocolate Chip Cookies",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400&h=400&fit=crop",
       description: "Soft-baked cookies loaded with dark and white chocolate chips, made with real butter",
       rating: 4.7,
       reviews: 145,
@@ -423,7 +416,7 @@ const Shop = () => {
       originalPrice: "$16",
       category: "cookies",
       subcategory: "Shortbread Cookies",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1548848670-0cc4c2be0095?w=400&h=400&fit=crop",
       description: "Traditional Scottish shortbread cookies made with premium butter and a hint of vanilla",
       rating: 4.5,
       reviews: 76,
@@ -438,7 +431,7 @@ const Shop = () => {
       originalPrice: "$18",
       category: "cookies",
       subcategory: "Oatmeal Cookies",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1606913084603-3e7702b01627?w=400&h=400&fit=crop",
       description: "Chewy oatmeal cookies packed with plump raisins and warm cinnamon spice",
       rating: 4.4,
       reviews: 92,
@@ -453,7 +446,7 @@ const Shop = () => {
       originalPrice: "$22",
       category: "cookies",
       subcategory: "Biscotti",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=400&fit=crop",
       description: "Twice-baked Italian cookies with almonds and anise, perfect with coffee or tea",
       rating: 4.6,
       reviews: 65,
@@ -461,8 +454,7 @@ const Shop = () => {
       isNew: true,
       discount: 27,
     },
-
-    // CHOCOLATES (Multiple varieties)
+    // CHOCOLATES
     {
       id: 26,
       name: "Handcrafted Dark Chocolate Truffles",
@@ -470,7 +462,7 @@ const Shop = () => {
       originalPrice: "$42",
       category: "chocolates",
       subcategory: "Truffles",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1511381939415-e44015466834?w=400&h=400&fit=crop",
       description: "Artisan dark chocolate truffles with 70% cocoa, dusted with premium cocoa powder",
       rating: 4.9,
       reviews: 112,
@@ -485,7 +477,7 @@ const Shop = () => {
       originalPrice: "$35",
       category: "chocolates",
       subcategory: "Chocolate Boxes",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=400&h=400&fit=crop",
       description: "Elegant box of assorted milk chocolates with various fillings and textures",
       rating: 4.6,
       reviews: 89,
@@ -500,7 +492,7 @@ const Shop = () => {
       originalPrice: "$38",
       category: "chocolates",
       subcategory: "Pralines",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1548365328-8c6db3220e4c?w=400&h=400&fit=crop",
       description: "Delicate white chocolate pralines filled with hazelnut cream and crunchy pieces",
       rating: 4.7,
       reviews: 73,
@@ -515,7 +507,7 @@ const Shop = () => {
       originalPrice: "$24",
       category: "chocolates",
       subcategory: "Chocolate Brownies",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=400&h=400&fit=crop",
       description: "Fudgy chocolate brownies with walnuts, rich and decadent texture",
       rating: 4.8,
       reviews: 134,
@@ -530,7 +522,7 @@ const Shop = () => {
       originalPrice: "$30",
       category: "chocolates",
       subcategory: "Chocolate Covered Fruits",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=400&h=400&fit=crop",
       description: "Fresh strawberries dipped in premium dark and white chocolate",
       rating: 4.9,
       reviews: 96,
@@ -538,8 +530,7 @@ const Shop = () => {
       isNew: false,
       discount: 27,
     },
-
-    // HAMPERS (Multiple varieties)
+    // HAMPERS
     {
       id: 31,
       name: "Deluxe Wedding Hamper",
@@ -547,7 +538,7 @@ const Shop = () => {
       originalPrice: "$110",
       category: "hampers",
       subcategory: "Wedding Hampers",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=400&fit=crop",
       description: "Elegant wedding gift hamper with assorted cakes, chocolates, and premium treats",
       rating: 4.9,
       reviews: 87,
@@ -562,7 +553,7 @@ const Shop = () => {
       originalPrice: "$85",
       category: "hampers",
       subcategory: "Birthday Hampers",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1464366400600-7168b8af9bc3?w=400&h=400&fit=crop",
       description: "Special birthday hamper with cake, cookies, chocolates, and party decorations",
       rating: 4.7,
       reviews: 104,
@@ -577,7 +568,7 @@ const Shop = () => {
       originalPrice: "$125",
       category: "hampers",
       subcategory: "Corporate Gift Hampers",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1543362906-acfc16c67564?w=400&h=400&fit=crop",
       description: "Professional gift hamper with premium treats, perfect for business occasions",
       rating: 4.8,
       reviews: 67,
@@ -592,7 +583,7 @@ const Shop = () => {
       originalPrice: "$100",
       category: "hampers",
       subcategory: "Festival Hampers",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400&h=400&fit=crop",
       description: "Festive hamper with traditional sweets, dry fruits, and seasonal specialties",
       rating: 4.6,
       reviews: 89,
@@ -607,7 +598,7 @@ const Shop = () => {
       originalPrice: "$75",
       category: "hampers",
       subcategory: "Tea & Coffee Hampers",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=400&fit=crop",
       description: "Perfect hamper for beverage lovers with premium teas, coffees, and accompaniments",
       rating: 4.5,
       reviews: 78,
@@ -615,8 +606,7 @@ const Shop = () => {
       isNew: false,
       discount: 27,
     },
-
-    // FLOWERS (Multiple varieties)
+    // FLOWERS
     {
       id: 36,
       name: "Premium Rose Bouquet",
@@ -624,7 +614,7 @@ const Shop = () => {
       originalPrice: "$45",
       category: "flowers",
       subcategory: "Rose Bouquets",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1563241527-3004b7be0ffd?w=400&h=400&fit=crop",
       description: "Beautiful arrangement of 12 fresh red roses with baby's breath and elegant wrapping",
       rating: 4.8,
       reviews: 68,
@@ -639,7 +629,7 @@ const Shop = () => {
       originalPrice: "$38",
       category: "flowers",
       subcategory: "Mixed Flower Bouquets",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=400&h=400&fit=crop",
       description: "Colorful mixed bouquet with roses, lilies, carnations, and seasonal flowers",
       rating: 4.6,
       reviews: 85,
@@ -654,7 +644,7 @@ const Shop = () => {
       originalPrice: "$160",
       category: "flowers",
       subcategory: "Wedding Flowers",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1487070183336-b863922373d4?w=400&h=400&fit=crop",
       description: "Elegant bridal bouquet with white roses, lilies, and eucalyptus leaves",
       rating: 4.9,
       reviews: 45,
@@ -669,7 +659,7 @@ const Shop = () => {
       originalPrice: "$60",
       category: "flowers",
       subcategory: "Orchid Arrangements",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=400&h=400&fit=crop",
       description: "Sophisticated orchid arrangement in a ceramic pot, perfect for home or office",
       rating: 4.7,
       reviews: 56,
@@ -684,7 +674,7 @@ const Shop = () => {
       originalPrice: "$42",
       category: "flowers",
       subcategory: "Flower Baskets",
-      image: productShowcase,
+      image: "https://images.unsplash.com/photo-1487070183336-b863922373d4?w=400&h=400&fit=crop",
       description: "Charming wicker basket filled with fresh seasonal flowers and greenery",
       rating: 4.5,
       reviews: 72,
@@ -705,8 +695,6 @@ const Shop = () => {
   };
 
   const filteredProducts = getFilteredProducts();
-  
-  // Show only 9 products initially, all products when showAllProducts is true
   const displayedProducts = showAllProducts ? filteredProducts : filteredProducts.slice(0, 9);
 
   const toggleFavorite = (productId: number) => {
@@ -730,28 +718,28 @@ const Shop = () => {
   const getBadgeColor = (badge: string) => {
     const colors = {
       "Bestseller": "bg-gradient-to-r from-amber-500 to-orange-500",
-      "Premium": "bg-gradient-to-r from-amber-500 to-orange-500", 
-      "Limited": "bg-gradient-to-r from-amber-500 to-orange-500",
-      "Organic": "fbg-gradient-to-r from-amber-500 to-orange-500",
-      "Exclusive": "bg-gradient-to-r from-amber-500 to-orange-500",
-      "Popular": "bg-gradient-to-r from-amber-500 to-orange-500",
-      "Chef's Special": "bg-gradient-to-r from-amber-500 to-orange-500",
-      "Classic": "bg-gradient-to-r from-amber-500 to-orange-500",
-      "Fresh": "bg-gradient-to-r from-amber-500 to-orange-500",
-      "Artisan": "bg-gradient-to-r from-amber-500 to-orange-500",
-      "Healthy": "fbg-gradient-to-r from-amber-500 to-orange-500",
-      "Traditional": "bg-gradient-to-r from-amber-500 to-orange-500",
-      "Signature": "bg-gradient-to-r from-amber-500 to-orange-500",
-      "Authentic": "bg-gradient-to-r from-amber-500 to-orange-500",
-      "Seasonal": "bg-gradient-to-r from-amber-500 to-orange-500",
-      "Gourmet": "bg-gradient-to-r from-amber-500 to-orange-500",
-      "Luxury": "bg-gradient-to-r from-amber-500 to-orange-500",
-      "Professional": "bg-gradient-to-r from-amber-500 to-orange-500",
-      "Specialty": "bg-gradient-to-r from-amber-500 to-orange-500",
-      "Bridal": "bg-gradient-to-r from-amber-500 to-orange-500",
-      "Elegant": "bg-gradient-to-r from-amber-500 to-orange-500",
+      "Premium": "bg-gradient-to-r from-purple-500 to-indigo-500", 
+      "Limited": "bg-gradient-to-r from-red-500 to-pink-500",
+      "Organic": "bg-gradient-to-r from-green-500 to-emerald-500",
+      "Exclusive": "bg-gradient-to-r from-amber-600 to-yellow-500",
+      "Popular": "bg-gradient-to-r from-blue-500 to-cyan-500",
+      "Chef's Special": "bg-gradient-to-r from-orange-500 to-red-500",
+      "Classic": "bg-gradient-to-r from-gray-600 to-gray-700",
+      "Fresh": "bg-gradient-to-r from-green-400 to-lime-500",
+      "Artisan": "bg-gradient-to-r from-purple-600 to-pink-600",
+      "Healthy": "bg-gradient-to-r from-green-600 to-teal-500",
+      "Traditional": "bg-gradient-to-r from-amber-700 to-orange-600",
+      "Signature": "bg-gradient-to-r from-indigo-500 to-purple-600",
+      "Authentic": "bg-gradient-to-r from-yellow-600 to-amber-600",
+      "Seasonal": "bg-gradient-to-r from-orange-400 to-red-400",
+      "Gourmet": "bg-gradient-to-r from-purple-700 to-indigo-700",
+      "Luxury": "bg-gradient-to-r from-yellow-500 to-amber-500",
+      "Professional": "bg-gradient-to-r from-gray-700 to-slate-700",
+      "Specialty": "bg-gradient-to-r from-teal-500 to-cyan-600",
+      "Bridal": "bg-gradient-to-r from-pink-400 to-rose-400",
+      "Elegant": "bg-gradient-to-r from-indigo-400 to-purple-500",
     };
-    return colors[badge] || "from-gray-400 via-gray-500 to-gray-600";
+    return colors[badge] || "bg-gradient-to-r from-gray-400 to-gray-500";
   };
 
   return (
@@ -807,7 +795,7 @@ const Shop = () => {
                       setActiveCategory(category.id);
                       setActiveSubcategory("");
                     }
-                    setShowAllProducts(false); // Reset to show only 9 products
+                    setShowAllProducts(false);
                   }}
                   variant={activeCategory === category.id ? "default" : "outline"}
                   className={`px-6 py-3 rounded-full font-inter font-medium transition-all duration-300 ${
@@ -839,7 +827,7 @@ const Shop = () => {
                     key={subcategory}
                     onClick={() => {
                       setActiveSubcategory(subcategory);
-                      setShowAllProducts(false); // Reset to show only 9 products
+                      setShowAllProducts(false);
                     }}
                     variant="outline"
                     className="p-4 h-auto flex-col gap-2 hover:bg-primary/10 hover:text-primary transition-all duration-300"
@@ -901,6 +889,7 @@ const Shop = () => {
                     src={product.image}
                     alt={product.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    loading="lazy"
                   />
                   
                   {/* Image Overlay */}
@@ -917,7 +906,7 @@ const Shop = () => {
                     
                     {/* Category Badge */}
                     {product.badge && (
-                      <div className={`bg-gradient-to-r ${getBadgeColor(product.badge)} text-white text-xs font-semibold px-3 py-1.5 rounded-full shadow-lg backdrop-blur-sm`}>
+                      <div className={`${getBadgeColor(product.badge)} text-white text-xs font-semibold px-3 py-1.5 rounded-full shadow-lg backdrop-blur-sm`}>
                         {product.badge}
                       </div>
                     )}
@@ -1011,132 +1000,59 @@ const Shop = () => {
                       onClick={() => handleWhatsAppOrder(product.name, product.price)}
                       className="flex-1 bg-gradient-to-r from-primary to-amber-500 text-white py-3 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center gap-2 hover:from-amber-500 hover:to-primary"
                     >
-                      <MessageCircle className="h-4 w-4 mr-2 group-hover/btn:scale-110 transition-transform" />
+                      <MessageCircle className="h-4 w-4" />
                       WhatsApp
                     </Button>
                     <Button
                       onClick={handleCallOrder}
                       variant="outline"
-                      className="flex-1 font-inter text-sm rounded-xl border-2 border-gray-200 hover:border-primary hover:bg-gradient-to-r hover:from-primary/10 hover:to-amber-50 hover:text-primary transition-all duration-300 hover:scale-105 group/btn"
+                      className="flex-1 font-inter text-sm rounded-xl border-2 border-gray-200 hover:border-primary hover:bg-gradient-to-r hover:from-primary/10 hover:to-amber-50 hover:text-primary transition-all duration-300 hover:scale-105"
                     >
-                      <Phone className="h-4 w-4 mr-2 group-hover/btn:scale-110 transition-transform" />
+                      <Phone className="h-4 w-4" />
                       Call
                     </Button>
                   </div>
                 </div>
-
-                {/* Shimmer Effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000 pointer-events-none" />
               </motion.div>
             ))}
           </motion.div>
 
-          {/* View All Button */}
-          {!showAllProducts && filteredProducts.length > 9 && (
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
+          {/* Show All Products Button */}
+          {filteredProducts.length > 9 && !showAllProducts && (
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
               className="text-center mt-12"
             >
               <Button
                 onClick={() => setShowAllProducts(true)}
-                size="lg"
-                className="bg-gradient-to-r from-primary to-amber-500 hover:from-primary/90 hover:to-amber-500/90 text-white font-inter font-semibold px-8 py-4 rounded-2xl shadow-xl shadow-primary/25 hover:shadow-2xl hover:shadow-primary/30 transition-all duration-300 hover:scale-105 group"
+                className="bg-gradient-to-r from-primary to-amber-500 text-white px-8 py-4 rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
               >
-                <span className="mr-3">View All Products ({filteredProducts.length})</span>
-                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+                Show All {filteredProducts.length} Products
+                <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </motion.div>
           )}
 
           {/* Show Less Button */}
           {showAllProducts && filteredProducts.length > 9 && (
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
+              transition={{ duration: 0.5 }}
               className="text-center mt-12"
             >
               <Button
                 onClick={() => setShowAllProducts(false)}
                 variant="outline"
-                size="lg"
-                className="font-inter font-semibold px-8 py-4 rounded-2xl border-2 hover:bg-primary hover:text-white transition-all duration-300 hover:scale-105"
+                className="px-8 py-4 rounded-xl font-semibold border-2 hover:bg-primary hover:text-primary-foreground transition-all duration-300"
               >
                 Show Less Products
+                <ChevronLeft className="ml-2 h-5 w-5 rotate-90" />
               </Button>
             </motion.div>
           )}
-
-          {filteredProducts.length === 0 && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              className="text-center py-16"
-            >
-              <h3 className="font-playfair text-2xl font-bold text-foreground mb-2">
-                No products found
-              </h3>
-              <p className="font-inter text-muted-foreground">
-                We're working on adding more items to this category. Please check back soon!
-              </p>
-            </motion.div>
-          )}
-        </div>
-      </section>
-
-      {/* Order Information */}
-      <section className="py-16 bg-cream">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="font-playfair text-3xl md:text-4xl font-bold text-foreground mb-6">
-              Easy Ordering Process
-            </h2>
-            <p className="font-inter text-lg text-muted-foreground mb-8">
-              Simply click WhatsApp to send us a pre-filled message with your order details, 
-              or call us directly to speak with our friendly team. We'll handle the rest!
-            </p>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="premium-card text-center">
-                <a
-                  href="https://wa.me/919138724870"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center w-16 h-16 bg-green-500 rounded-full shadow hover:bg-green-600 transition mb-4"
-                  aria-label="WhatsApp"
-                >
-                  <MessageCircle className="h-8 w-8 text-white" />
-                </a>
-                <h3 className="font-playfair text-xl font-bold text-foreground mb-2">
-                  WhatsApp Orders
-                </h3>
-                <p className="font-inter text-muted-foreground text-sm mb-4">
-                  Quick and convenient ordering with instant confirmation
-                </p>
-              </div>
-              <div className="premium-card text-center">
-                <a
-                  href="tel:+919138724870"
-                  className="inline-flex items-center justify-center w-16 h-16 bg-primary rounded-full shadow hover:bg-primary/90 transition mb-4"
-                  aria-label="Call"
-                >
-                  <Phone className="h-8 w-8 text-white" />
-                </a>
-                <h3 className="font-playfair text-xl font-bold text-foreground mb-2">
-                  Phone Orders
-                </h3>
-                <p className="font-inter text-muted-foreground text-sm mb-4">
-                  Speak directly with our team for personalized service
-                </p>
-              </div>
-            </div>
-          </motion.div>
         </div>
       </section>
     </div>

@@ -66,8 +66,7 @@ const Footer = () => {
               <div className="flex items-start space-x-3">
                 <MapPin size={18} className="text-primary mt-1 flex-shrink-0" />
                 <p className="text-muted-foreground font-inter text-sm">
-                  123 Baker Street, Pastry Lane<br />
-                  Sweet City, SC 12345
+                  KC road Barnala, Barnala , Punjab, 148101
                 </p>
               </div>
               <div className="flex items-center space-x-3">

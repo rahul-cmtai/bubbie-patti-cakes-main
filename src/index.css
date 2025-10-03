@@ -140,7 +140,7 @@ All colors MUST be HSL. Luxury minimal with golden accents.
 
   /* Single floral pattern background for each section */
   section, .container, main > div {
-    background-image: url('/src/assets/floral-pattern.png');
+    background-image: url('/src/assets/floral-border.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
