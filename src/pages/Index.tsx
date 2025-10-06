@@ -7,8 +7,6 @@ import PopularProducts from "@/components/ui/PopularProducts";
 import SpecialOffers from "@/components/ui/SpecialOffers";
 
 const Index = () => {
- 
-
   const features = [
     {
       icon: Heart,
@@ -61,42 +59,24 @@ const Index = () => {
         
         {/* Hero Content */}
         <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
-          {/* Stars SVG above the name */}
+          {/* Logo image above the name */}
           <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
-            className="flex justify-center mb-2"
+            className="flex justify-center mb-6"
           >
-            <svg width="60" height="32" viewBox="0 0 60 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g>
-                <circle cx="30" cy="24" r="2" fill="#FFC107"/>
-                <circle cx="20" cy="28" r="1.5" fill="#FFC107"/>
-                <circle cx="40" cy="28" r="1.5" fill="#FFC107"/>
-                <polygon points="30,10 32,16 38,16 33,19 35,25 30,21 25,25 27,19 22,16 28,16" fill="#FFC107"/>
-                <polygon points="15,18 16,21 19,21 16.5,23 17.5,26 15,24 12.5,26 13.5,23 11,21 14,21" fill="#FFC107"/>
-                <polygon points="45,18 46,21 49,21 46.5,23 47.5,26 45,24 42.5,26 43.5,23 41,21 44,21" fill="#FFC107"/>
-              </g>
-            </svg>
+         <img 
+  src="/images/hero_logo2.png" 
+  alt="Bubble Cakery Logo" 
+  className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-contain drop-shadow-2xl"
+/>
+
           </motion.div>
-          <motion.h1 
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="font-playfair text-xl md:text-7xl lg:text-8xl font-bold text-white mb-2 drop-shadow-2xl tracking-wide"
-            style={{ letterSpacing: "0.05em" }}
-          >
-            Bubble <br /> Cakery
-          </motion.h1>
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.3 }}
-            className="font-inter text-lg md:text-xl text-white/90 mb-8 tracking-widest"
-            style={{ letterSpacing: "0.25em" }}
-          >
-            TASTE THAT THRILLS
-          </motion.p>
+          
+         
+          
+          
 
           {/* Sliding Text Animation */}
           <div className="h-16 mb-8 flex items-center justify-center overflow-hidden">
@@ -134,7 +114,7 @@ const Index = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="font-inter text-lg md:text-xl text-white/90 mb-12 max-w-2xl mx-auto drop-shadow-lg"
+            className="font-inter text-base sm:text-lg md:text-xl lg:text-2xl text-white/90 mb-8 md:mb-12 max-w-[90vw] sm:max-w-2xl mx-auto drop-shadow-lg px-4 sm:px-0 leading-relaxed"
           >
             Experience luxury baking where every bite is crafted with love and every creation tells a story of perfection.
           </motion.p>
@@ -312,7 +292,6 @@ const Index = () => {
 
       {/* Testimonials */}
       <Testimonial />
-
     </div>
   );
 };

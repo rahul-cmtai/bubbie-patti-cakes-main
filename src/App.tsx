@@ -25,7 +25,7 @@ const App = () => (
         <ScrollToTop />
         <div className="min-h-screen flex flex-col">
           <Navigation />
-          <main className="flex-1 pt-20">
+          <main className="flex-1 pt-16 md:pt-24">
             <Routes>
               <Route path="/" element={<Index />} />
               <Route path="/about" element={<About />} />
