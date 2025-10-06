@@ -66,10 +66,10 @@ const Index = () => {
             transition={{ duration: 0.8, delay: 0.1 }}
             className="flex justify-center mb-6"
           >
-         <img 
-  src="/images/hero_logo2.png" 
-  alt="Bubble Cakery Logo" 
-  className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-contain drop-shadow-2xl"
+ <img
+  src="/images/hero_logo2.png"
+  alt="Bubble Cakery Logo"
+  className="w-52 h-52 md:w-64 md:h-64 lg:w-[512px] lg:h-[512px] object-contain drop-shadow-2xl"
 />
 
           </motion.div>
