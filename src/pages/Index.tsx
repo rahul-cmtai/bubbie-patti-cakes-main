@@ -48,7 +48,7 @@ const Index = () => {
             className="w-full h-full object-cover"
           >
             {/* Direct video link as background */}
-            <source src="./images/hero.mp4" type="video/mp4" />
+            <source src="./images/hero2.mp4" type="video/mp4" />
             {/* You can add more <source> tags for other formats if needed */}
           </video>
           
@@ -67,7 +67,7 @@ const Index = () => {
             className="flex justify-center mb-6"
           >
  <img
-  src="/images/hero_logo2.png"
+  src="/images/hero_logo3.png"
   alt="Bubble Cakery Logo"
   className="w-52 h-52 md:w-64 md:h-64 lg:w-[512px] lg:h-[512px] object-contain drop-shadow-2xl"
 />
