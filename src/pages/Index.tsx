@@ -69,7 +69,7 @@ const Index = () => {
  <img
   src="/images/hero_logo3.png"
   alt="Bubble Cakery Logo"
-  className="w-52 h-52 md:w-64 md:h-64 lg:w-[512px] lg:h-[512px] object-contain drop-shadow-2xl"
+  className="w-80 h-80 md:w-64 md:h-64 lg:w-[512px] lg:h-[512px] object-contain drop-shadow-2xl"
 />
 
           </motion.div>
